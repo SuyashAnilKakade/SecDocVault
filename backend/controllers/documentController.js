@@ -1,3 +1,4 @@
+const ApiError = require("../utils/ApiError");
 const asyncHandler = require("../utils/asyncHandler");
 const ApiResponse = require("../utils/ApiResponse");
 const Document = require("../models/Document");
