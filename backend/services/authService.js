@@ -162,7 +162,7 @@ const forgotPassword = async (email) => {
 
   await user.save();
 
-  const resetLink = `http://localhost:5173/reset-password/${resetToken}`;
+  const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
   await sendEmail(
     user.email,
